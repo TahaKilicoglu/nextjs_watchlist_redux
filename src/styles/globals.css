@@ -1,0 +1,15 @@
+html, body {
+  height: 100%; /* Tüm yüksekliği kapla */
+  margin: 0; /* Varsayılan margin'i sıfırla */
+}
+
+.layout-container {
+  display: flex; /* Flexbox düzenini kullan */
+  flex-direction: column; /* Dikey yönde hizala */
+  min-height: 100vh; /* Sayfanın en az 100% yüksekliğinde olmasını sağla */
+}
+
+.main-content {
+  flex: 1; /* Ana içeriğin esnek olmasını sağla */
+}
+ 
