@@ -30,7 +30,6 @@
     right: 0; /* Sağdan hizalama */
     background-color: rgba(0, 0, 0, 0.7); /* Arka plan rengi */
     color: white; /* Yazı rengi */
-    padding: 10px; /* İçerik boşluğu */
     border-radius: 0 0 5px 5px; /* Alt kenar yuvarlama */
     transition: opacity 0.3s ease; /* Geçiş efekti ekleme */
     opacity: 0; /* İlk başta görünmez */
@@ -69,9 +68,9 @@
     bottom: 0; /* Alttan hizalama */
     left: 0; /* Soldan hizalama */
     right: 0; /* Sağdan hizalama */
+    padding: 10px;
     background-color: rgba(0, 0, 0, 0.7); /* Arka plan rengi */
     color: white; /* Yazı rengi */
-    padding: 10px; /* İçerik boşluğu */
     border-radius: 0 0 5px 5px; /* Alt kenar yuvarlama */
     transition: opacity 0.3s ease; /* Geçiş efekti ekleme */
     opacity: 0; /* İlk başta görünmez */
@@ -96,17 +95,19 @@
   
   .add-button {
     background-color: #007bff; /* Mavi arka plan rengi */
-    color: white; /* Beyaz yazı rengi */
-    border: none; /* Kenarlık yok */
-    border-radius: 5px; /* Kenar yuvarlama */
-    padding: 10px 15px; /* İçerik boşluğu */
-    cursor: pointer; /* İmleç değişimi */
-    margin-top: 5px; /* Butonun üstüne boşluk */
-    transition: background-color 0.3s, transform 0.2s; /* Geçiş efekti ekleme */
-  }
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    width: 100%; /* Butonu tam genişlikte yap */
+    display: flex; /* Flexbox kullanarak içeriği ortala */
+    justify-content: center; /* Yatayda ortala */
+     }
   
   .add-button:hover {
     background-color: #0056b3; /* Hover durumunda koyu mavi */
-    transform: scale(1.05); /* Hover durumunda büyütme efekti */
+    border-radius: 5px;
   }
   
